@@ -4,6 +4,7 @@ import Responses as R
 
 from selenium import webdriver
 
+
 '''
 def prenota_command(update, context):
     update.message.reply_text('Ecco la prenotazione')
@@ -11,6 +12,24 @@ def prenota_command(update, context):
 '''
 print("bot started...")
 
+def calcola_totale():
+    print(variabile_che_non_esiste + 5) 
+
+# 2. F706: Return outside function (Errore di sintassi logica)
+# Decommenta la riga sotto per testare l'errore fatale di sintassi
+# return "Sono fuori da una funzione" 
+
+# 3. F632: Use of 'is' for literal (Bug logico frequente)
+def controllo_identita(n):
+    if n is 5: # Dovrebbe essere '==' - può causare comportamenti imprevedibili
+        pass
+
+# 4. F704: Yield outside function
+# yield 10 
+
+# 5. E999: Syntax Error puro (Indentazione errata o parentesi chiuse male)
+def errore_sintassi():
+  print("Parentesi non chiusa"
 
 def start_command(update, context):
     update.message.reply_text("Sti gran cazzi!!")
