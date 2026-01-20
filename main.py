@@ -20,10 +20,9 @@ def calcola_totale():
 return "Sono fuori da una funzione" 
 
 # 3. F632: Use of 'is' for literal (Bug logico frequente)
-x = 200
-if x is 200:
-    
-    print("It's 200!")
+s = "ciao"
+if s is "ciao":  # Questo DEVE attivare F632
+    print(s)
 
 # 4. F704: Yield outside function
 yield 10 
