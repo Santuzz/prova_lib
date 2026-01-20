@@ -17,15 +17,16 @@ def calcola_totale():
 
 # 2. F706: Return outside function (Errore di sintassi logica)
 # Decommenta la riga sotto per testare l'errore fatale di sintassi
-# return "Sono fuori da una funzione" 
+return "Sono fuori da una funzione" 
 
 # 3. F632: Use of 'is' for literal (Bug logico frequente)
-def controllo_identita(n):
-    if n is 5: # Dovrebbe essere '==' - può causare comportamenti imprevedibili
-        pass
+x = 200
+if x is 200:
+    
+print("It's 200!")
 
 # 4. F704: Yield outside function
-# yield 10 
+yield 10 
 
 # 5. E999: Syntax Error puro (Indentazione errata o parentesi chiuse male)
 def errore_sintassi():
