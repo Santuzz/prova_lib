@@ -23,7 +23,7 @@ return "Sono fuori da una funzione"
 x = 200
 if x is 200:
     
-print("It's 200!")
+    print("It's 200!")
 
 # 4. F704: Yield outside function
 yield 10 
