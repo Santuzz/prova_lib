@@ -29,7 +29,7 @@ yield 10
 
 # 5. E999: Syntax Error puro (Indentazione errata o parentesi chiuse male)
 def errore_sintassi():
-  print("Parentesi non chiusa"
+  print("Parentesi non chiusa")
 
 def start_command(update, context):
     update.message.reply_text("Sti gran cazzi!!")
